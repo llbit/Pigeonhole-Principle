@@ -134,7 +134,7 @@ Lemma in_l_p : forall T (u p : T) l,
   In u (p::l).
 Proof. intros; right; assumption. Qed.
 
-(** A trivial fact: for all lists [l], every element of the empty list is [l]. *)
+(** A trivial fact: for all lists [l], every element of the empty list is in [l]. *)
 
 Theorem nil_allin : forall T (l : list T), allin nil l.
 Proof. intros * u []. Qed.
@@ -302,7 +302,7 @@ Qed.
 (** * The Pigeonhole Principle *)
 
 (** The pigeonhole principle is the fact that if you to place
-    [n] marbles into [m] buckets, there most exist a bucket
+    [n] marbles into [m] buckets, there is a bucket
     containing more than one marble if [n > m].
 *)
 
